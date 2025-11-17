@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS→REELS: AI Content Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0A3D62',       // Azul profundo
+              secondary: '#C4A267',      // Dorado champagne
+              complementary: '#E5E5E5', // Gris claro
+              highlight: '#3DB2FF',      // Azul cielo
+              text: '#2C2C2C',           // Gris grafito
+              background: '#FAFAFA',      // Blanco suave
+            }
+          }
+        }
+      }
+    </script>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+        "docx": "https://aistudiocdn.com/docx@^9.5.1"
+      }
+    }
+    </script>
+    <script type="module" src="/index.tsx"></script>
+    <style>
+      /* Simple fade-in animation used in App.tsx */
+      @keyframes fade-in {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.5s ease-out forwards;
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-background">
+    <div id="root"></div>
+</body>
+</html>

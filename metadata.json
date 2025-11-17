@@ -1,0 +1,7 @@
+{
+  "name": "NEWS→REELS: AI Content Generator",
+  "description": "An AI-powered assistant for real estate and mortgage professionals. It finds the latest local news & events, then generates viral video scripts for Reels, TikTok, or Shorts to boost your social media presence. Now available in English, Spanish, and Portuguese.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
